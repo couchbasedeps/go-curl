@@ -1,10 +1,12 @@
 // libcurl go bingding
 package curl
 
+// Couchbase cbdeps curl package for Windows has "aberrant" file naming
+// "libcurl.lib", so we must use -llibcurl there
 /*
 #cgo linux LDFLAGS: -lcurl
 #cgo darwin LDFLAGS: -lcurl
-#cgo windows LDFLAGS: -lcurl
+#cgo windows LDFLAGS: -llibcurl
 #include <stdlib.h>
 #include <curl/curl.h>
 
