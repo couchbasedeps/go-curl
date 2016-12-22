@@ -2,7 +2,7 @@
 package curl
 
 /*
-#cgo linux pkg-config: libcurl
+#cgo linux LDFLAGS: -lcurl
 #cgo darwin LDFLAGS: -lcurl
 #cgo windows LDFLAGS: -lcurl
 #include <stdlib.h>
