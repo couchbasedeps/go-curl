@@ -3,6 +3,7 @@ package curl
 
 // Couchbase cbdeps curl package for Windows has "aberrant" file naming
 // "libcurl.lib", so we must use -llibcurl there
+
 /*
 #cgo linux LDFLAGS: -lcurl
 #cgo darwin LDFLAGS: -lcurl
