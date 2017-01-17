@@ -5,8 +5,7 @@ package curl
 // "libcurl.lib", so we must use -llibcurl there
 
 /*
-#cgo linux LDFLAGS: -lcurl
-#cgo darwin LDFLAGS: -lcurl
+#cgo !windowsw LDFLAGS: -lcurl
 #cgo windows LDFLAGS: -llibcurl
 #include <stdlib.h>
 #include <curl/curl.h>
